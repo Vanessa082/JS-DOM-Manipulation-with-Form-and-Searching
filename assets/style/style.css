@@ -1,0 +1,71 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 2rem;
+  margin: 1rem 1rem;
+}
+
+form {
+  max-width: 10000px;
+  border: 1px groove;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+form h1 {
+  color: green;
+  padding-right: 72rem;
+}
+
+input {
+  height: 5vh;
+  border: none;
+}
+
+/* .delete-button {
+  color: red;
+  border: none;
+  text-align: center;
+} */
+
+form button {
+  height: 6vh;
+  background-color: green;
+  color: #fff;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+table {
+  padding: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  padding: 8px;
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-of-type(2n) {
+  background-color: #ba2b2b;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+}
