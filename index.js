@@ -33,7 +33,7 @@ const createTemplate = (user, i) => {
   //
   const btnId = user.name.split(' ').join('-') // condition ? run true verson : run false version of code
   return `
-    <tr class="${i % 2 === 0 ? "" : "gray-tr"}">
+    <tr class="${i % 2 === 0 ? '' : 'gray-tr'}">
         <td>${getInitials(user.name)}</td>
         <td class='nam'>${user.name}</td>
         <td class='ag'>${user.age}</td>
