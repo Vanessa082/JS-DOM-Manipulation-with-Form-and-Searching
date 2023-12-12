@@ -32,7 +32,7 @@ const createTemplate = (user) => {
     </tr>`
 }
 
-const displayUsers = (users_arr) => {
+const displayUsers = (usersAarr) => {
   // to initialize the table's headers
   listofstudent.innerHTML = `
         <tr>
@@ -43,7 +43,7 @@ const displayUsers = (users_arr) => {
         </tr>
     `
 
-  users_arr.forEach((user) => {
+  usersAarr.forEach((user) => {
     listofstudent.innerHTML += createTemplate(user)
   })
 
@@ -60,6 +60,7 @@ const filterStudents = (searchname, searchage) => {
     if ((lowerSearchName && lowerUserName.includes(lowerSearchName)) || (searchage && user.age === searchage)) {
       return true
     }
+    return false
   })
 
   return results
